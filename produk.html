@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Minuman Modern</title>
+</head>
+<body>
+    <section class="sec">
+        <header>
+            <a href="#"><img src="images/logo.png" class="logo"></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                </ul>
+        </header>
+        
+        <div class="content">
+            <div class="texBox">
+                <h2>Halaman produk<br><span>I Like</span></h2>
+                <p>Nikmati momen istimewa bersama secangkir kopi hangat yang dapat menenangkan pikiran dan menghangatkan hati</p>
+                <a href="#"><b>View All Products</b></a>
+            </div>
+            <div class="imgBOx">
+                <img src="images/susu.png" class="kopiku">
+            </div>
+        </div>
+
+        <ul class="thumb">
+            <li><img src="images/susu.png" onclick="imgSlider('images/susu.png');changeBgColor('#CEAEDA')"></li>
+            <li><img src="images/coklat.png" onclick="imgSlider('images/coklat.png');changeBgColor('#932cc1')"></li>
+            <li><img src="images/kopi.png" onclick="imgSlider('images/kopi.png');changeBgColor('#89838E')"></li>
+        </ul>
+
+        <ul class="sosialMedia">
+            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything) {
+        document.querySelector('.kopiku').src = anything;
+    }
+        function changeBgColor(color) {
+            const sec = document.querySelector('.sec');
+            sec.style.background = color;
+        }
+    </script>
+
+</body>
+</html>
